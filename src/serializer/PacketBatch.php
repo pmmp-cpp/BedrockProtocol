@@ -17,8 +17,8 @@ namespace pocketmine\network\mcpe\protocol\serializer;
 use pocketmine\network\mcpe\protocol\Packet;
 use pocketmine\network\mcpe\protocol\PacketDecodeException;
 use pocketmine\network\mcpe\protocol\PacketPool;
-use pocketmine\utils\BinaryDataException;
-use pocketmine\utils\BinaryStream;
+use BinaryDataException;
+use BinaryStream;
 use function strlen;
 
 class PacketBatch{

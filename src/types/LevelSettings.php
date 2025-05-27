@@ -17,7 +17,7 @@ namespace pocketmine\network\mcpe\protocol\types;
 use pocketmine\network\mcpe\protocol\PacketDecodeException;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
-use pocketmine\utils\BinaryDataException;
+use BinaryDataException;
 
 final class LevelSettings{
 

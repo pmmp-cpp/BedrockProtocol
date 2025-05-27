@@ -15,7 +15,7 @@ declare(strict_types=1);
 namespace pocketmine\network\mcpe\protocol;
 
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
-use pocketmine\utils\BinaryDataException;
+use BinaryDataException;
 use function get_class;
 
 abstract class DataPacket implements Packet{

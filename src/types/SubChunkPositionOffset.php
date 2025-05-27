@@ -15,8 +15,8 @@ declare(strict_types=1);
 namespace pocketmine\network\mcpe\protocol\types;
 
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
-use pocketmine\utils\Binary;
-use pocketmine\utils\Limits;
+use Binary;
+use Limits;
 
 final class SubChunkPositionOffset{
 

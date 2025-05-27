@@ -16,7 +16,7 @@ namespace pocketmine\network\mcpe\protocol;
 
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\login\JwtChain;
-use pocketmine\utils\BinaryStream;
+use BinaryStream;
 use function count;
 use function is_array;
 use function is_string;

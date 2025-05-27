@@ -17,7 +17,7 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\command\CommandOriginData;
 use pocketmine\network\mcpe\protocol\types\command\CommandOutputMessage;
-use pocketmine\utils\BinaryDataException;
+use BinaryDataException;
 use function count;
 
 class CommandOutputPacket extends DataPacket implements ClientboundPacket{

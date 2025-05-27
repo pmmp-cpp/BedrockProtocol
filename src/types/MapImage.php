@@ -16,9 +16,9 @@ namespace pocketmine\network\mcpe\protocol\types;
 
 use pocketmine\color\Color;
 use pocketmine\network\mcpe\protocol\PacketDecodeException;
-use pocketmine\utils\Binary;
-use pocketmine\utils\BinaryDataException;
-use pocketmine\utils\BinaryStream;
+use Binary;
+use BinaryDataException;
+use BinaryStream;
 use function count;
 
 final class MapImage{

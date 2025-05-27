@@ -16,7 +16,7 @@ namespace pocketmine\network\mcpe\protocol\types\inventory;
 
 use pocketmine\network\mcpe\protocol\PacketDecodeException;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
-use pocketmine\utils\BinaryDataException;
+use BinaryDataException;
 use function count;
 
 abstract class TransactionData{

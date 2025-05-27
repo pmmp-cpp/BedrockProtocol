@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
-use pocketmine\utils\Binary;
-use pocketmine\utils\BinaryDataException;
+use Binary;
+use BinaryDataException;
 
 class PacketPool{
 	protected static ?PacketPool $instance = null;

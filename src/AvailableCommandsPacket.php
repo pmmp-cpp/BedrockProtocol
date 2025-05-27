@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
+use BinaryDataException;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\command\ChainedSubCommandData;
 use pocketmine\network\mcpe\protocol\types\command\ChainedSubCommandValue;
@@ -23,7 +24,6 @@ use pocketmine\network\mcpe\protocol\types\command\CommandEnumConstraint;
 use pocketmine\network\mcpe\protocol\types\command\CommandOverload;
 use pocketmine\network\mcpe\protocol\types\command\CommandParameter;
 use pocketmine\network\mcpe\protocol\types\command\CommandParameterTypes as ArgTypes;
-use pocketmine\utils\BinaryDataException;
 use function array_search;
 use function count;
 use function dechex;

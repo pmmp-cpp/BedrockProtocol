@@ -17,7 +17,7 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\ChunkPosition;
 use pocketmine\network\mcpe\protocol\types\DimensionIds;
-use pocketmine\utils\Limits;
+use Limits;
 use function count;
 use const PHP_INT_MAX;
 

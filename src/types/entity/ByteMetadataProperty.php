@@ -16,7 +16,7 @@ namespace pocketmine\network\mcpe\protocol\types\entity;
 
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\GetTypeIdFromConstTrait;
-use pocketmine\utils\Binary;
+use Binary;
 
 final class ByteMetadataProperty implements MetadataProperty{
 	use GetTypeIdFromConstTrait;

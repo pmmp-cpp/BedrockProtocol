@@ -21,7 +21,7 @@ use pocketmine\network\mcpe\protocol\types\DimensionIds;
 use pocketmine\network\mcpe\protocol\types\MapDecoration;
 use pocketmine\network\mcpe\protocol\types\MapImage;
 use pocketmine\network\mcpe\protocol\types\MapTrackedObject;
-use pocketmine\utils\Binary;
+use Binary;
 use function count;
 
 class ClientboundMapItemDataPacket extends DataPacket implements ClientboundPacket{
