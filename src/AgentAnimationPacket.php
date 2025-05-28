@@ -17,10 +17,10 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 
 class AgentAnimationPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::AGENT_ANIMATION_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::AGENT_ANIMATION_PACKET;
 
-	public const TYPE_ARM_SWING = 0;
-	public const TYPE_SHRUG = 1;
+	public const int TYPE_ARM_SWING = 0;
+	public const int TYPE_SHRUG = 1;
 
 	private int $animationType;
 	private int $actorRuntimeId;

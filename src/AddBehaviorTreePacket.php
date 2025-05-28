@@ -17,7 +17,7 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 
 class AddBehaviorTreePacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::ADD_BEHAVIOR_TREE_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::ADD_BEHAVIOR_TREE_PACKET;
 
 	public string $behaviorTreeJson;
 

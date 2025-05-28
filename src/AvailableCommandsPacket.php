@@ -29,60 +29,60 @@ use function count;
 use function dechex;
 
 class AvailableCommandsPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::AVAILABLE_COMMANDS_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::AVAILABLE_COMMANDS_PACKET;
 
 	/**
 	 * This flag is set on all types EXCEPT the POSTFIX type. Not completely sure what this is for, but it is required
 	 * for the argtype to work correctly. VALID seems as good a name as any.
 	 */
-	public const ARG_FLAG_VALID = 0x100000;
+	public const int ARG_FLAG_VALID = 0x100000;
 
 	/**
 	 * Basic parameter types. These must be combined with the ARG_FLAG_VALID constant.
 	 * ARG_FLAG_VALID | (type const)
 	 */
-	public const ARG_TYPE_INT = ArgTypes::INT;
-	public const ARG_TYPE_FLOAT = ArgTypes::VAL;
-	public const ARG_TYPE_VALUE = ArgTypes::RVAL;
-	public const ARG_TYPE_WILDCARD_INT = ArgTypes::WILDCARDINT;
-	public const ARG_TYPE_OPERATOR = ArgTypes::OPERATOR;
-	public const ARG_TYPE_COMPARE_OPERATOR = ArgTypes::COMPAREOPERATOR;
-	public const ARG_TYPE_TARGET = ArgTypes::SELECTION;
+	public const int ARG_TYPE_INT = ArgTypes::INT;
+	public const int ARG_TYPE_FLOAT = ArgTypes::VAL;
+	public const int ARG_TYPE_VALUE = ArgTypes::RVAL;
+	public const int ARG_TYPE_WILDCARD_INT = ArgTypes::WILDCARDINT;
+	public const int ARG_TYPE_OPERATOR = ArgTypes::OPERATOR;
+	public const int ARG_TYPE_COMPARE_OPERATOR = ArgTypes::COMPAREOPERATOR;
+	public const int ARG_TYPE_TARGET = ArgTypes::SELECTION;
 
-	public const ARG_TYPE_WILDCARD_TARGET = ArgTypes::WILDCARDSELECTION;
+	public const int ARG_TYPE_WILDCARD_TARGET = ArgTypes::WILDCARDSELECTION;
 
-	public const ARG_TYPE_FILEPATH = ArgTypes::PATHCOMMAND;
+	public const int ARG_TYPE_FILEPATH = ArgTypes::PATHCOMMAND;
 
-	public const ARG_TYPE_FULL_INTEGER_RANGE = ArgTypes::FULLINTEGERRANGE;
+	public const int ARG_TYPE_FULL_INTEGER_RANGE = ArgTypes::FULLINTEGERRANGE;
 
-	public const ARG_TYPE_EQUIPMENT_SLOT = ArgTypes::EQUIPMENTSLOTENUM;
-	public const ARG_TYPE_STRING = ArgTypes::ID;
+	public const int ARG_TYPE_EQUIPMENT_SLOT = ArgTypes::EQUIPMENTSLOTENUM;
+	public const int ARG_TYPE_STRING = ArgTypes::ID;
 
-	public const ARG_TYPE_INT_POSITION = ArgTypes::POSITION;
-	public const ARG_TYPE_POSITION = ArgTypes::POSITION_FLOAT;
+	public const int ARG_TYPE_INT_POSITION = ArgTypes::POSITION;
+	public const int ARG_TYPE_POSITION = ArgTypes::POSITION_FLOAT;
 
-	public const ARG_TYPE_MESSAGE = ArgTypes::MESSAGE_ROOT;
+	public const int ARG_TYPE_MESSAGE = ArgTypes::MESSAGE_ROOT;
 
-	public const ARG_TYPE_RAWTEXT = ArgTypes::RAWTEXT;
+	public const int ARG_TYPE_RAWTEXT = ArgTypes::RAWTEXT;
 
-	public const ARG_TYPE_JSON = ArgTypes::JSON_OBJECT;
+	public const int ARG_TYPE_JSON = ArgTypes::JSON_OBJECT;
 
-	public const ARG_TYPE_BLOCK_STATES = ArgTypes::BLOCK_STATE_ARRAY;
+	public const int ARG_TYPE_BLOCK_STATES = ArgTypes::BLOCK_STATE_ARRAY;
 
-	public const ARG_TYPE_COMMAND = ArgTypes::CODEBUILDERARGS;
+	public const int ARG_TYPE_COMMAND = ArgTypes::CODEBUILDERARGS;
 
 	/**
 	 * Enums are a little different: they are composed as follows:
 	 * ARG_FLAG_ENUM | ARG_FLAG_VALID | (enum index)
 	 */
-	public const ARG_FLAG_ENUM = 0x200000;
+	public const int ARG_FLAG_ENUM = 0x200000;
 
 	/** This is used for /xp <level: int>L. It can only be applied to integer parameters. */
-	public const ARG_FLAG_POSTFIX = 0x1000000;
+	public const int ARG_FLAG_POSTFIX = 0x1000000;
 
-	public const ARG_FLAG_SOFT_ENUM = 0x4000000;
+	public const int ARG_FLAG_SOFT_ENUM = 0x4000000;
 
-	public const HARDCODED_ENUM_NAMES = [
+	public const array HARDCODED_ENUM_NAMES = [
 		"CommandName" => true
 	];
 

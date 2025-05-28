@@ -18,7 +18,7 @@ use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use function count;
 
 class AnimateEntityPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::ANIMATE_ENTITY_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::ANIMATE_ENTITY_PACKET;
 
 	private string $animation;
 	private string $nextState;

@@ -14,11 +14,11 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
-use pocketmine\math\Vector3;
+use PMMath\Vector3;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 
 class AddPaintingPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::ADD_PAINTING_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::ADD_PAINTING_PACKET;
 
 	public int $actorUniqueId;
 	public int $actorRuntimeId;

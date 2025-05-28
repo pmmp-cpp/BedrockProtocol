@@ -21,7 +21,7 @@ use pocketmine\network\mcpe\protocol\types\AgentActionType;
  * Used by code builder, exact purpose unclear
  */
 class AgentActionEventPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::AGENT_ACTION_EVENT_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::AGENT_ACTION_EVENT_PACKET;
 
 	private string $requestId;
 	/** @see AgentActionType */

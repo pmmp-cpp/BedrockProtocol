@@ -18,7 +18,7 @@ use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\BlockPosition;
 
 class AnvilDamagePacket extends DataPacket implements ServerboundPacket{
-	public const NETWORK_ID = ProtocolInfo::ANVIL_DAMAGE_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::ANVIL_DAMAGE_PACKET;
 
 	private BlockPosition $blockPosition;
 	private int $damageAmount;

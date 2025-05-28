@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
-use pocketmine\math\Vector3;
+use PMMath\Vector3;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\DeviceOS;
 use pocketmine\network\mcpe\protocol\types\entity\EntityLink;
@@ -25,7 +25,7 @@ use Ramsey\Uuid\UuidInterface;
 use function count;
 
 class AddPlayerPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::ADD_PLAYER_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::ADD_PLAYER_PACKET;
 
 	public UuidInterface $uuid;
 	public string $username;

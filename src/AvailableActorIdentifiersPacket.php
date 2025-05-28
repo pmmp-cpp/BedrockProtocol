@@ -14,18 +14,19 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
+use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\CacheableNbt;
 
 class AvailableActorIdentifiersPacket extends DataPacket implements ClientboundPacket{
-	public const NETWORK_ID = ProtocolInfo::AVAILABLE_ACTOR_IDENTIFIERS_PACKET;
+	public const int NETWORK_ID = ProtocolInfo::AVAILABLE_ACTOR_IDENTIFIERS_PACKET;
 
-	/** @phpstan-var CacheableNbt<\pocketmine\nbt\tag\CompoundTag> */
+	/** @phpstan-var CacheableNbt<CompoundTag> */
 	public CacheableNbt $identifiers;
 
 	/**
 	 * @generate-create-func
-	 * @phpstan-param CacheableNbt<\pocketmine\nbt\tag\CompoundTag> $identifiers
+	 * @phpstan-param CacheableNbt<CompoundTag> $identifiers
 	 */
 	public static function create(CacheableNbt $identifiers) : self{
 		$result = new self;
