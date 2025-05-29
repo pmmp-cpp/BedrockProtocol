@@ -18,7 +18,7 @@ use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\ActorEvent;
 
 class ActorEventPacket extends DataPacket implements ClientboundPacket, ServerboundPacket{
-	public const int NETWORK_ID = ProtocolInfo::ACTOR_EVENT_PACKET;
+	public const NETWORK_ID = ProtocolInfo::ACTOR_EVENT_PACKET;
 
 	public int $actorRuntimeId;
 	/** @see ActorEvent */

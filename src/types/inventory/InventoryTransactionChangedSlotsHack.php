@@ -37,7 +37,6 @@ final class InventoryTransactionChangedSlotsHack{
 		for($i = 0, $len = $in->getUnsignedVarInt(); $i < $len; ++$i){
 			$changedSlots[] = $in->getByte();
 		}
-
 		return new self($containerId, $changedSlots);
 	}
 

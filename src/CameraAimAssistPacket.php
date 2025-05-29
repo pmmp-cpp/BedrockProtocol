@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
-use PMMath\Vector2;
+use pocketmine\math\Vector2;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\camera\CameraAimAssistActionType;
 use pocketmine\network\mcpe\protocol\types\camera\CameraAimAssistTargetMode;

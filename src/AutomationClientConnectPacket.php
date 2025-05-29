@@ -17,7 +17,7 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 
 class AutomationClientConnectPacket extends DataPacket implements ClientboundPacket{
-	public const int NETWORK_ID = ProtocolInfo::AUTOMATION_CLIENT_CONNECT_PACKET;
+	public const NETWORK_ID = ProtocolInfo::AUTOMATION_CLIENT_CONNECT_PACKET;
 
 	public string $serverUri;
 

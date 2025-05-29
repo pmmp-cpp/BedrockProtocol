@@ -14,13 +14,13 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
-use PMMath\Vector3;
+use pocketmine\math\Vector3;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\entity\MetadataProperty;
 use pocketmine\network\mcpe\protocol\types\inventory\ItemStackWrapper;
 
 class AddItemActorPacket extends DataPacket implements ClientboundPacket{
-	public const int NETWORK_ID = ProtocolInfo::ADD_ITEM_ACTOR_PACKET;
+	public const NETWORK_ID = ProtocolInfo::ADD_ITEM_ACTOR_PACKET;
 
 	public int $actorUniqueId;
 	public int $actorRuntimeId;

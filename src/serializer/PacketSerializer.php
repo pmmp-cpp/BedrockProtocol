@@ -14,8 +14,8 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol\serializer;
 
-use PMMath\Vector2;
-use PMMath\Vector3;
+use pocketmine\math\Vector2;
+use pocketmine\math\Vector3;
 use pocketmine\nbt\NbtDataException;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\TreeRoot;
@@ -515,17 +515,17 @@ class PacketSerializer extends BinaryStream{
 	 * Writes a floating-point Vector3 object
 	 */
 	public function putVector3(Vector3 $vector) : void{
-		$this->putLFloat($vector->getX());
-		$this->putLFloat($vector->getY());
-		$this->putLFloat($vector->getZ());
+		$this->putLFloat($vector->x);
+		$this->putLFloat($vector->y);
+		$this->putLFloat($vector->z);
 	}
 
 	/**
 	 * Writes a floating-point Vector2 object
 	 */
 	public function putVector2(Vector2 $vector2) : void{
-		$this->putLFloat($vector2->getX());
-		$this->putLFloat($vector2->getY());
+		$this->putLFloat($vector2->x);
+		$this->putLFloat($vector2->y);
 	}
 
 	/**

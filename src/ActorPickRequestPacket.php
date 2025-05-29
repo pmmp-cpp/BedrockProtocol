@@ -17,7 +17,7 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 
 class ActorPickRequestPacket extends DataPacket implements ServerboundPacket{
-	public const int NETWORK_ID = ProtocolInfo::ACTOR_PICK_REQUEST_PACKET;
+	public const NETWORK_ID = ProtocolInfo::ACTOR_PICK_REQUEST_PACKET;
 
 	public int $actorUniqueId;
 	public int $hotbarSlot;

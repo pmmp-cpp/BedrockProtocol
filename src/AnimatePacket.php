@@ -17,13 +17,13 @@ namespace pocketmine\network\mcpe\protocol;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 
 class AnimatePacket extends DataPacket implements ClientboundPacket, ServerboundPacket{
-	public const int NETWORK_ID = ProtocolInfo::ANIMATE_PACKET;
+	public const NETWORK_ID = ProtocolInfo::ANIMATE_PACKET;
 
-	public const int ACTION_SWING_ARM = 1;
+	public const ACTION_SWING_ARM = 1;
 
-	public const int ACTION_STOP_SLEEP = 3;
-	public const int ACTION_CRITICAL_HIT = 4;
-	public const int ACTION_MAGICAL_CRITICAL_HIT = 5;
+	public const ACTION_STOP_SLEEP = 3;
+	public const ACTION_CRITICAL_HIT = 4;
+	public const ACTION_MAGICAL_CRITICAL_HIT = 5;
 
 	public int $action;
 	public int $actorRuntimeId;

@@ -14,16 +14,15 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe\protocol;
 
-use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use pocketmine\network\mcpe\protocol\types\BlockPosition;
 use pocketmine\network\mcpe\protocol\types\CacheableNbt;
 
 class AddVolumeEntityPacket extends DataPacket implements ClientboundPacket{
-	public const int NETWORK_ID = ProtocolInfo::ADD_VOLUME_ENTITY_PACKET;
+	public const NETWORK_ID = ProtocolInfo::ADD_VOLUME_ENTITY_PACKET;
 
 	private int $entityNetId;
-	/** @phpstan-var CacheableNbt<CompoundTag> */
+	/** @phpstan-var CacheableNbt<\pocketmine\nbt\tag\CompoundTag> */
 	private CacheableNbt $data;
 	private string $jsonIdentifier;
 	private string $instanceName;
@@ -34,7 +33,7 @@ class AddVolumeEntityPacket extends DataPacket implements ClientboundPacket{
 
 	/**
 	 * @generate-create-func
-	 * @phpstan-param CacheableNbt<CompoundTag> $data
+	 * @phpstan-param CacheableNbt<\pocketmine\nbt\tag\CompoundTag> $data
 	 */
 	public static function create(
 		int $entityNetId,
@@ -60,7 +59,7 @@ class AddVolumeEntityPacket extends DataPacket implements ClientboundPacket{
 
 	public function getEntityNetId() : int{ return $this->entityNetId; }
 
-	/** @phpstan-return CacheableNbt<CompoundTag> */
+	/** @phpstan-return CacheableNbt<\pocketmine\nbt\tag\CompoundTag> */
 	public function getData() : CacheableNbt{ return $this->data; }
 
 	public function getJsonIdentifier() : string{ return $this->jsonIdentifier; }
